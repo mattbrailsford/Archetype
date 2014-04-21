@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         expand: true
       },
       dll: {
-        cwd: 'app/Umbraco/Umbraco.Archetype/bin/Debug/',
+        cwd: 'app/Umbraco/Umbraco.Archetype/bin/Release/',
         src: '*.*',
         dest: '<%= dest %>/bin/',
         expand: true
@@ -87,12 +87,6 @@ module.exports = function(grunt) {
             cwd: 'config/',
             src: ['package.manifest'],
             dest: '<%= basePath %>',
-            expand: true
-          },
-          {
-            cwd: 'app/config/',
-            src: ['propertyEditors.views.js'],
-            dest: '<%= basePath %>/js',
             expand: true
           },
           {
